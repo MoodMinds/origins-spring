@@ -40,8 +40,8 @@ public class ReactiveAdapterRegistration implements InitializingBean {
      */
     @Override
     public void afterPropertiesSet() {
-        this.registerAdapter(ReactiveAdapterRegistry.getSharedInstance());
-        if (this.reactiveAdapterRegistry != null) this.registerAdapter(this.reactiveAdapterRegistry);
+        registerAdapter(ReactiveAdapterRegistry.getSharedInstance());
+        if (reactiveAdapterRegistry != null) registerAdapter(reactiveAdapterRegistry);
     }
 
     /**
